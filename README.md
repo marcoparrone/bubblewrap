@@ -1,4 +1,4 @@
-# graphicsmagick
+# bubblewrap
 
 The Bubblewrap tool, packaged in a docker container.
 
