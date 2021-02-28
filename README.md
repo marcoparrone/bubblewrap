@@ -34,9 +34,13 @@ Add in your ~/.bash_aliases or in your ~/.bashrc:
 alias bubblewrap='podman run --rm -it -v .:/root/workdir -v ~/secret:/root/secret -w /root/workdir marcoparrone/bubblewrap bubblewrap'
 ```
 
+Eventually, put your signing key into the "secret" folder.
+
 then, after reloading the file, run the bubblewrap command, for example:
 
 ```sh
+mkdir notes
+cd notes
 bubblewrap init --manifest=https://notes.marcoparrone.com/manifest.json
 ...
 bubblewrap build
